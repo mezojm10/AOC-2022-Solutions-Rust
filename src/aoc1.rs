@@ -31,3 +31,49 @@ fn part2(input: &str) -> u32 {
     calories.sort();
     calories.iter().rev().take(3).sum::<u32>()
 }
+
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_part1() {
+        let input = "\
+1000
+2000
+3000
+
+4000
+
+5000
+6000
+
+7000
+8000
+9000
+
+10000
+";
+        assert_eq!(24000, part1(input));
+    }
+
+    #[test]
+    fn test_part2() {
+        let input = "\
+1000
+2000
+3000
+
+4000
+
+5000
+6000
+
+7000
+8000
+9000
+
+10000
+";
+        assert_eq!(45000, part2(input));
+    }
+}

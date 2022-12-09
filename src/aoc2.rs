@@ -50,3 +50,27 @@ fn part2(input: &str) -> u32 {
         }
     })
 }
+
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_part1() {
+        let input = "\
+A Y
+B X
+C Z
+";
+        assert_eq!(15, part1(input));
+    }
+
+    #[test]
+    fn test_part2() {
+        let input = "\
+A Y
+B X
+C Z
+";
+        assert_eq!(12, part2(input));
+    }
+}

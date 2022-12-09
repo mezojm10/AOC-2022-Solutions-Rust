@@ -58,3 +58,33 @@ fn part2(input: &str) -> u32 {
     }
     priority_sum
 }
+
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_part1() {
+        let input = "\
+vJrwpWtwJgWrhcsFMMfFFhFp
+jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL
+PmmdzqPrVvPwwTWBwg
+wMqvLMZHhHMvwLHjbvcjnnSBnvTQFn
+ttgJtRGJQctTZtZT
+CrZsJsPPZsGzwwsLwLmpwMDw
+";
+        assert_eq!(157, part1(input));
+    }
+
+    #[test]
+    fn test_part2() {
+        let input = "\
+vJrwpWtwJgWrhcsFMMfFFhFp
+jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL
+PmmdzqPrVvPwwTWBwg
+wMqvLMZHhHMvwLHjbvcjnnSBnvTQFn
+ttgJtRGJQctTZtZT
+CrZsJsPPZsGzwwsLwLmpwMDw
+";
+        assert_eq!(70, part2(input));
+    }
+}
